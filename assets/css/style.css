@@ -1,0 +1,40 @@
+body {
+  margin: 0;                        /* 移除瀏覽器預設 margin */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #181818;
+  background-color: #bfc4cc;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;                /* 讓 footer 永远貼底 */
+}
+
+
+.site-nav {
+  display: flex;              /* 讓連結水平排列 */
+  justify-content: center;   /* 水平置中 */
+  align-items: center;        /* 垂直置中 */
+  background-color: #181818;
+  padding: 20px 0;            /* 上下內距 */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.site-nav a {
+  color: #bfc4cc;
+  text-decoration: none; 
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 30px;             /* distance between links */
+  padding: 8px 0;             /* 讓點擊區域更大 */
+  transition: color 0.3s ease; /* 滑鼠移過時平滑變色 */
+}
+
+.site-nav a:hover {
+  color: #0c2bf5;             /* 滑鼠移過時變成亮藍 */
+}
+
+.site-nav a.current {         /* 目前頁面高亮（可選） */
+  color: #bfc4cc;
+  border-bottom: 3px solid #0c2bf5;
+  padding-bottom: 5px;
+}

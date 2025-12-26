@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      {% if page.title %}
+        {{ page.title }}
+      {% else %}
+      {% endif %}
+    </title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  
+  <body>
+    {% include header.html %}
+
+    <main class="main-content">
+      {{ content }}
+    </main>
+
+    <!-- ====================== Footer ====================== -->
+    <footer class="site-footer">
+      <p>&copy; {{ site.time | date: '%Y' }} NAME. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
