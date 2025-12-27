@@ -1,12 +1,23 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: pagelayout
 title: Home
 ---
 
 
-<p>
-    This is just a test.
-</p>
+<h1>Florence Zhang-yukun</h1>
+<p>張宇琨 /ʧaŋ˥ y˨˩ kʰwən˥/, 장우곤.</p>
+<p>It/Its. 它/他</p>
+<div class="home-container">
+  <div class="home-content">
+    <p align="justify">
+      Hallo 👋🏻.
+    </p>
+    <p align="justify">
+      I am currently a PhD student at <a href="https://ling.yale.edu">Yale Linguistics</a>, with a focus on syntax and an occasional interest in syntax's interfaces with semantics and phonology. Languagewise, I am interested in Chinese langauges and Koreanic languages.
+    </p>
+  </div>
+
+  <div class="home-photo">
+    <img src="{{ '/assets/img/profile.svg' | relative_url }}" alt="profile" class="profile-img">
+  </div>
+</div>
