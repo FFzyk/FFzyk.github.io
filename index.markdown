@@ -21,3 +21,17 @@ title: Home
     <img src="{{ '/assets/img/profile.svg' | relative_url }}" alt="profile" class="profile-img">
   </div>
 </div>
+
+
+
+<h2>News</h2>
+<ul class = "news-list">
+  <!--一個loop-->
+  {% assign sorted_news = site.news | sort: 'date' | reverse %}
+    {% for post in sorted_news limit:5 %}
+      <li>
+        <time>{{ post.date | date: "%Y%m%d" }}</time><span class="news-content">{{ post.content }}</span>
+      </li>
+    {% endfor %}
+</ul>
+

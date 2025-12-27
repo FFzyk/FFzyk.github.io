@@ -1,14 +1,7 @@
 <nav class="site-nav">
-  <a href="{{ site.baseurl }}/" aria-label="Home">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 93" aria-hidden="true">
-    <g fill="currentColor">
-      <rect width="5.7319007" height="93.273659" x="32.307079" y="4.1686554" rx="0.1" ry="0.1"/>
-      <rect width="38.560062" height="6.2529831" x="22.406523" y="43.249798" rx="0.1" ry="0.1"/>
-      <!-- 把你原本所有 rect 都貼進來 -->
-      <!-- ... 其餘 14 個 rect ... -->
-    </g>
-  </svg>
-</a>
+  <a href="{{ site.baseurl }}/">home</a>
   <a href="{{ site.baseurl }}/cv/">cv</a>
-  <a href="{{ site.baseurl }}/others/">others</a>
+  <a href="{{ site.baseurl }}/others/" aria-label="others">
+    {% include svg/others.svg %}
+  </a>
 </nav>
