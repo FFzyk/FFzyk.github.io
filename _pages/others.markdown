@@ -5,7 +5,7 @@ permalink: /others/
 ---
 
 <div id="everything">
-<p>These are some of the books I recommended.</p>
+<p></p>
 <div>
 
 <script src="{{ '/assets/js/canvas.js' | relative_url }}"></script>
