@@ -35,3 +35,6 @@ title: Home
     {% endfor %}
 </ul>
 
+<div class="clustrmap-container">
+  <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=rDSRhSAjhmfVf7WuLPNG22WuhBbADedsto0RCC7Cckk"></script>
+</div>
